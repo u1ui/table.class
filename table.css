@@ -1,0 +1,62 @@
+/*
+use aria?
+No, css is representation
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
+*/
+
+.u1-table {
+    display:table;
+}
+.u1-table > * {
+    display:table-row-group;
+}
+.u1-table > * > * {
+    display:table-row;
+}
+.u1-table > * > * > * {
+    display:table-cell;
+    padding:calc(var(--gap) / 2); /* gap by default ?*/
+}
+
+
+/* .-Flex */
+.u1-table.-Flex {
+    display: block;
+}
+.u1-table.-Flex > * {
+    display: block;
+}
+.u1-table.-Flex > * > * {
+    display:flex;
+    flex-wrap:wrap; /* only fields-table? */
+    align-items: baseline;
+    padding:calc(var(--gap)/2) 0;
+}
+.u1-table.-Flex > * > * > * {
+    flex-grow: 1;
+    flex-shrink:0;
+    flex-basis:10em;
+    min-width:0;
+    padding:0 calc(var(--gap)/2);
+    padding:0;
+}
+
+
+.u1-table.-Fields input:not([type=radio], [type=checkbox], [type=date], [type=color]),
+.u1-table.-Fields textarea {
+    width:100%;
+    xmin-width:8em;
+}
+.u1-table.-Flex.-Fields > * > * > * {
+    display:flex; /* needed for textarea align */
+}
+
+/*
+display:grid;(block) makes chrome first-textarea-line as baseline; makes but removes this from firefox needs inline
+bad hack, what if chrome implements two-values-display
+.u1-table textarea {
+    vertical-align: baseline;
+    display: block;
+    display: flex inline;
+}
+/**/

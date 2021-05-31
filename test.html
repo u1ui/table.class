@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>u1-ico Test</title>
+
+        <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/norm.css/norm.min.css">
+        <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/norm.css/beta.min.css">
+        <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/base.css/base.min.css">
+        <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/base.css/beta.min.css">
+        <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/classless.css/variables.min.css">
+        <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/classless.css/variables.more.min.css">
+        <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/classless.css/classless.min.css">
+        <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/classless.css/simple.min.css">
+        <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/classless.css/more.min.css">
+
+        <link rel=stylesheet href="./table.css">
+<body>
+
+    <style>
+        section input,
+        section select,
+        section textarea {
+            padding-top:2em;
+        }
+    </style>
+
+    <section>
+        <p>Fields have padding-top:2em to show if labels are align with fields</p>
+    </section>
+
+    <section class=fieldsAlign>
+        <h2>Fields align with "label"</h2>
+        <div style="overflow:auto">
+            <div class="u1-table -Fields" style="width:max-content">
+                <div>
+                    <label>
+                        <span>Theme</span>
+                        <span>
+                            <select>
+                                <option>Black</option>
+                                <option>White</option>
+                            </select>
+                        </span>
+                    </label>
+                    <label>
+                        <span>Name</span>
+                        <span>
+                            <input>
+                        </span>
+                    </label>
+                    <label>
+                        <span>Comment</span>
+                        <span>
+                            <textarea></textarea>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class=flex>
+        <h2>.-Flex</h2>
+        <style>
+            .flex label {
+                xborder-bottom:1px solid #eee;
+            }
+        </style>
+        <div class="u1-table -Flex -Fields">
+            <div>
+                <label>
+                    <span>Theme</span>
+                    <span>
+                        <select>
+                            <option>Black</option>
+                            <option>White</option>
+                        </select>
+                    </span>
+                </label>
+                <label>
+                    <span>Name</span>
+                    <span>
+                        <input>
+                    </span>
+                </label>
+                <label>
+                    <span>Comment</span>
+                    <span>
+                        <textarea></textarea>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class=padding >
+        <h2>This does align in every browser (safari?)</h2>
+        (flex-items align-items:baseline)
+        <div style="display:flex; align-items:baseline">
+            <span>Test</span>
+            <textarea>test</textarea>
+        </div>
+    </section>
