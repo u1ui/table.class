@@ -6,6 +6,7 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
 
 .u1-table {
     display:table;
+    width:100%;
 }
 .u1-table > * {
     display:table-row-group;
