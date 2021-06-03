@@ -5,7 +5,7 @@
 
 .u1-table adds padding
 
-´´´html
+```html
 <table class="u1-table">
     <tr>
         <td>
