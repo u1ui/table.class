@@ -52,6 +52,34 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
     display:flex; /* needed for textarea align */
 }
 
+/* beta! */
+.u1-table.-Sticky {
+    border-collapse: separate;
+    /*
+    Tables should be in a overflow:auto-wrapper (for mobile)
+    But it make sticky not work, because it gets a new sticky container :(
+    */
+    xmax-height:60vh;
+    xoverflow:auto;
+    xdisplay:block;
+}
+.u1-table.-Sticky > * {
+    xwidth:100%;
+}
+.u1-table.-Sticky > * > * > th {
+    position:sticky;
+    top:0;
+    xleft:0;
+    background-color:var(--color-bg);
+}
+/*
+.u1-table.-Sticky > tbody > * > th {
+    max-width:30%;
+    width:30%;
+    white-space: normal;
+}
+*/
+
 /*
 display:grid;(block) makes chrome first-textarea-line as baseline; makes but removes this from firefox needs inline
 bad hack, what if chrome implements two-values-display
