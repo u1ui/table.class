@@ -48,9 +48,12 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
     width:100%;
     xmin-width:8em;
 }
+
+/* would be good for textarea align *
 .u1-table.-Flex.-Fields > * > * > * {
-    display:flex; /* needed for textarea align */
+    display:flex;
 }
+*/
 
 /* beta! */
 .u1-table.-Sticky {
