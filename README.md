@@ -5,7 +5,7 @@
 
 .u1-table adds padding
 
-´´´html
+```html
 <table class="u1-table">
     <tr>
         <td>
@@ -18,7 +18,7 @@
 
 .u1-table makes non-table elements table-like
 
-´´´html
+```html
 <div class="u1-table">
     <div><!-- tbody -->
         <div><!-- tr -->
@@ -37,7 +37,7 @@
 
 .u1-table aligns inputs and breaks (default ad 10em)
 
-´´´html
+```html
 <div class="u1-table -Flex -Fields">
     <div><!-- tbody -->
         <lable><!-- tr -->
