@@ -61,10 +61,12 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
     /*
     Tables should be in a overflow:auto-wrapper (for mobile)
     But it make sticky not work, because it gets a new sticky container :(
-    */
+    position:relative;
+    z-index:0;
     xmax-height:60vh;
     xoverflow:auto;
     xdisplay:block;
+    */
 }
 .u1-table.-Sticky > * {
     xwidth:100%;
