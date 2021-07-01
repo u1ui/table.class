@@ -51,3 +51,7 @@
     </div>
 </tables>
 ```
+
+## Demo
+https://raw.githack.com/u1ui/table.class/main/tests/test.html  
+
