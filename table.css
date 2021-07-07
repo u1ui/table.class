@@ -46,7 +46,9 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
 .u1-table.-Fields input:not([type=radio], [type=checkbox], [type=date], [type=color]),
 .u1-table.-Fields textarea {
     width:100%;
-    xmin-width:8em;
+}
+.u1-table.-Fields > * > * > :first-child {
+    width:var(--col-1-width, 9em);
 }
 
 /* would be good for textarea align *
