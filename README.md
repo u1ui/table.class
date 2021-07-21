@@ -35,7 +35,7 @@
 </tables>
 ```
 
-.u1-table aligns inputs and breaks (default ad 10em)
+.u1-table aligns inputs and breaks (at 10em)
 
 ```html
 <div class="u1-table -Flex -Fields">
