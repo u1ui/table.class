@@ -6,7 +6,18 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
 
 .u1-table {
     display:table;
+    border-collapse:collapse;
+
+    /* todo?
+    border-spacing: 0;
+    font-variant-numeric: tabular-nums;
+    */
+
     width:100%;
+
+    --u1-Gap: var(--gap, 1rem);
+    --u1-Col-gap: var(--u1-Gap);
+    --u1-Row-gap: var(--u1-Gap);
 }
 .u1-table > * {
     display:table-row-group;
@@ -16,7 +27,8 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
 }
 .u1-table > * > * > * {
     display:table-cell;
-    padding:calc(var(--gap) / 2); /* gap by default ?*/
+    /* padding:calc(var(--gap) / 2); old zzz */
+    padding: calc(var(--u1-Row-gap) / 2)  calc(var(--u1-Col-gap) / 2);
 }
 
 
@@ -27,25 +39,31 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
 .u1-table.-Flex > * {
     display: block;
 }
-.u1-table.-Flex > * > * {
+.u1-table.-Flex > * > * { /* tr */
     display:flex;
     flex-wrap:wrap; /* only fields-table? */
     align-items: baseline;
-    padding:calc(var(--gap)/2) 0;
+    padding:calc(var(--u1-Row-gap) / 2) 0;
 }
-.u1-table.-Flex > * > * > * {
+.u1-table.-Flex > * > * > * { /* td */
     flex-grow: 1;
     flex-shrink:0;
     flex-basis:10em;
     min-width:0;
-    padding:0 calc(var(--gap)/2);
-    padding:0;
+    padding:0 calc(var(--u1-Col-gap) / 2);
+    border:0 !important; /* overwrite inherit from sticky, and border makes no sense if flex */
 }
+.u1-table.-Flex.-NoSideGaps > * > * { column-gap:var(--u1-Col-gap); }
+.u1-table.-Flex.-NoSideGaps > * > * > * { padding:0; }
 
 
+/* .-Fields */
 .u1-table.-Fields input:not([type=radio], [type=checkbox], [type=date], [type=color]),
 .u1-table.-Fields textarea {
     width:100%;
+    width:-moz-available;
+    width:-webkit-fill-available;
+    width:stretch;
 }
 .u1-table.-Fields > * > * > :first-child {
     width:var(--col-1-width, 9em);
@@ -57,7 +75,12 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
 }
 */
 
-/* beta! */
+.u1-table.-NoSideGaps > * > * > :first-child { padding-left:0; }
+.u1-table.-NoSideGaps > * > * > :last-child { padding-right:0; }
+
+
+
+/* .-Sticky beta! */
 .u1-table.-Sticky {
     border-collapse: separate;
     /*
@@ -70,15 +93,15 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
     xdisplay:block;
     */
 }
-.u1-table.-Sticky > * {
-    xwidth:100%;
-}
-.u1-table.-Sticky > * > * > th {
+.u1-table.-Sticky > thead > * > th {
     position:sticky;
     top:0;
-    xleft:0;
     background-color:var(--color-bg);
 }
+.u1-table.-Sticky > * > * > * { /* border-collapse:separate prevents borders on tr */
+    border-bottom:inherit;
+}
+
 /*
 .u1-table.-Sticky > tbody > * > th {
     max-width:30%;
