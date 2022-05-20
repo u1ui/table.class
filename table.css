@@ -15,7 +15,7 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
 
     width:100%;
 
-    --u1-Gap: var(--gap, 1rem);
+    --u1-Gap: 1rem;
     --u1-Col-gap: var(--u1-Gap);
     --u1-Row-gap: var(--u1-Gap);
 }
@@ -27,7 +27,6 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
 }
 .u1-table > * > * > * {
     display:table-cell;
-    /* padding:calc(var(--gap) / 2); old zzz */
     padding: calc(var(--u1-Row-gap) / 2)  calc(var(--u1-Col-gap) / 2);
 }
 
@@ -68,7 +67,6 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
 .u1-table.-Fields > * > * > :first-child {
     width:var(--col-1-width, 9em);
 }
-
 /* would be good for textarea align *
 .u1-table.-Flex.-Fields > * > * > * {
     display:flex;
