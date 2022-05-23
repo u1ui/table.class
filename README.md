@@ -52,6 +52,7 @@
 </tables>
 ```
 
-## Demo
+## Demos
+https://raw.githack.com/u1ui/table.class/main/tests/minimal.html  
 https://raw.githack.com/u1ui/table.class/main/tests/test.html  
 
