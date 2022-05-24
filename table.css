@@ -2,6 +2,9 @@
 use aria?
 No, css is representation
 https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
+
+using grid:
+https://jsfiddle.net/x90cz65o/103/
 */
 
 .u1-table {
@@ -14,6 +17,11 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Grid_Role
     */
 
     width:100%;
+    /* todo?
+    width:-moz-available;
+    width:-webkit-fill-available;
+    width:stretch;
+    */
 
     --u1-Gap: 1rem;
     --u1-Col-gap: var(--u1-Gap);
