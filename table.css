@@ -71,6 +71,7 @@ https://jsfiddle.net/x90cz65o/103/
 }
 .u1-table.-Fields > * > * > :first-child {
     width:var(--col-1-width, 9em);
+    flex-basis:var(--col-1-width, 9em);
 }
 /* would be good for textarea align *
 .u1-table.-Flex.-Fields > * > * > * {
