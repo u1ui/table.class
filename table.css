@@ -10,19 +10,14 @@ https://jsfiddle.net/x90cz65o/103/
 .u1-table {
     display:table;
     border-collapse:collapse;
-
-    /* todo?
-    border-spacing: 0;
-    font-variant-numeric: tabular-nums;
-    */
-
     width:100%;
     /* todo?
     width:-moz-available;
     width:-webkit-fill-available;
     width:stretch;
+    border-spacing: 0; /* css-tables: border-spacing in not table-elements is already 0 *
+    font-variant-numeric: tabular-nums; /* in base.css but not for css-tables
     */
-
     --u1-Gap: 1rem;
     --u1-Col-gap: var(--u1-Gap);
     --u1-Row-gap: var(--u1-Gap);
@@ -59,6 +54,8 @@ https://jsfiddle.net/x90cz65o/103/
     min-width:0;
     padding:0 calc(var(--u1-Col-gap) / 2);
     border:0 !important; /* overwrite inherit from sticky, and border makes no sense if flex */
+    display:flex; /* new ok? better textarea-baseline */
+    flex-direction:column;
 }
 .u1-table.-Flex.-NoSideGaps > * > * { column-gap:var(--u1-Col-gap); }
 .u1-table.-Flex.-NoSideGaps > * > * > * { padding:0; }

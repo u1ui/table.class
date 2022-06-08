@@ -80,7 +80,7 @@
         form.addEventListener('input',write);
         write();
         </script>
-        <div style="overflow:auto; padding:1rem; resize:both; white-space:nowrap;">
+        <div style="overflow:auto; padding:1rem; resize:both;">
             <h4>css Table</h4>
             <div class="u1-table">
                 <div>
@@ -117,8 +117,8 @@
                             <td>Cell 1 / 3
                         <tr>
                             <td>Comment
-                            <td><textarea></textarea>
-                            <td>Cell 4 / 3
+                            <td><textarea>Comment</textarea>
+                            <td><input>
                 </table>
             </div>
         </div>
@@ -197,6 +197,14 @@
                             <span>Comment</span>
                             <span>
                                 <textarea>The cell would need to be display:flex so that the first line of the textarea is the baseline in any browser.</textarea>
+                            </span>
+                        </label>
+                        <label>
+                            <span>More Elements in Cell</span>
+                            <span>
+                                <input value="More Elements...">
+                                Hallo
+                                <input>
                             </span>
                         </label>
                     </div>
