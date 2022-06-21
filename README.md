@@ -1,58 +1,48 @@
-# table.class
+# .u1-table - class
+Better tables
 
-# Ussage
-
-
-.u1-table adds padding
+## Ussage
 
 ```html
-<table class="u1-table">
-    <tr>
-        <td>
-        </td>
-    </tr>
-</tables>
+<table class="u1-table -Flex -NoSideGaps -Sticky -Fields">
+    <thead>
+        <tr>
+            <th>Name
+            <th>Text Column
+            <th>Last Colunn
+    <tbody>
+        <tr>
+            <td>Cell 1 / 1
+            <td>Cell 1 / 2
+            <td>Cell 1 / 3
+        <tr>
+            <td>Cell 2 / 1
+            <td>Cell 2 / 2
+            <td>Cell 1 / 3 long content causing overflow-div to add scrollbars
+        <tr>
+            <td>Cell 3 / 1
+            <td>Cell 3 / 2
+            <td>Cell 1 / 3
+        <tr>
+            <td>Comment
+            <td><textarea aria-label=textarea></textarea>
+            <td><input aria-label=input>
+</table>
 ```
 
-
-
-.u1-table makes non-table elements table-like
+## Install
 
 ```html
-<div class="u1-table">
-    <div><!-- tbody -->
-        <div><!-- tr -->
-            <div></div><!-- td -->
-            <div></div><!-- td -->
-            <div></div><!-- td -->
-        </div>
-        <div><!-- tr -->
-            <div></div><!-- td -->
-            <div></div><!-- td -->
-            <div></div><!-- td -->
-        </div>
-    </div>
-</tables>
-```
-
-.u1-table aligns inputs and breaks (at 10em)
-
-```html
-<div class="u1-table -Flex -Fields">
-    <div><!-- tbody -->
-        <lable><!-- tr -->
-            <span>Text</span><!-- td -->
-            <span><input></span><!-- td -->
-        </div>
-        <div><!-- tr -->
-            <span>Comment</span><!-- td -->
-            <span><textarea></textarea></span><!-- td -->
-        </div>
-    </div>
-</tables>
+<link href="https://cdn.jsdelivr.net/gh/u1ui/table.class@3.0.0/table.min.css" rel=stylesheet>
 ```
 
 ## Demos
-https://raw.githack.com/u1ui/table.class/main/tests/minimal.html  
-https://raw.githack.com/u1ui/table.class/main/tests/test.html  
+
+[minimal.html](https://raw.githack.com/u1ui/table.class/main/tests/minimal.html)  
+[test.html](https://raw.githack.com/u1ui/table.class/main/tests/test.html)  
+
+## About
+
+- MIT License, Copyright (c) 2022 <u1> (like all repositories in this organization) <br>
+- Suggestions, ideas, finding bugs and making pull requests make us very happy. ♥
 
