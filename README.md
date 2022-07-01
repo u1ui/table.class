@@ -30,6 +30,13 @@ Better tables
 </table>
 ```
 
+```css
+.u1-table {
+    --u1-Gap:2rem;
+    --u1-Col-gap:1rem;
+}
+```
+
 ## Install
 
 ```html
@@ -38,8 +45,8 @@ Better tables
 
 ## Demos
 
-[minimal.html](https://raw.githack.com/u1ui/table.class/main/tests/minimal.html)  
-[test.html](https://raw.githack.com/u1ui/table.class/main/tests/test.html)  
+[minimal.html](http://gcdn.li/u1ui/table.class@main/tests/minimal.html)  
+[test.html](http://gcdn.li/u1ui/table.class@main/tests/test.html)  
 
 ## About
 
