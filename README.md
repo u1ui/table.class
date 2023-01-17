@@ -1,6 +1,16 @@
 # .u1-table - class
 Better tables
 
+## Features
+
+- adds at the table definded paddings `--u1-Col-gap` `--u1-Col-gap` `--u1-Row-gap`
+- makes non-table elements table-like
+- Use modifier classes: 
+    - Flex: To make table rows flex and break rows on smaller screens
+    - NoSideGaps: to remove the left and right padding
+    - Sticky: to make make header-cells sticky
+    - Fields: to make inputs width 100%
+
 ## Ussage
 
 ```html
@@ -52,4 +62,3 @@ Better tables
 
 - MIT License, Copyright (c) 2022 <u1> (like all repositories in this organization) <br>
 - Suggestions, ideas, finding bugs and making pull requests make us very happy. ♥
-
