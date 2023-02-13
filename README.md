@@ -50,7 +50,7 @@ Better tables
 ## Install
 
 ```html
-<link href="https://cdn.jsdelivr.net/gh/u1ui/table.class@3.0.0/table.min.css" rel=stylesheet>
+<link href="https://cdn.jsdelivr.net/gh/u1ui/table.class@x.x.x/table.min.css" rel=stylesheet>
 ```
 
 ## Demos
@@ -62,3 +62,4 @@ Better tables
 
 - MIT License, Copyright (c) 2022 <u1> (like all repositories in this organization) <br>
 - Suggestions, ideas, finding bugs and making pull requests make us very happy. ♥
+
