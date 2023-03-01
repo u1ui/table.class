@@ -14,7 +14,6 @@ https://jsfiddle.net/x90cz65o/103/
     /* todo?
     width:-moz-available;
     width:-webkit-fill-available;
-    width:stretch;
     border-spacing: 0; /* css-tables: border-spacing in not table-elements is already 0 *
     font-variant-numeric: tabular-nums; /* in base.css but not for css-tables
     */
@@ -67,7 +66,6 @@ https://jsfiddle.net/x90cz65o/103/
     width:100%;
     width:-moz-available;
     width:-webkit-fill-available;
-    width:stretch;
 }
 .u1-table.-Fields > * > * > :first-child {
     width:var(--col-1-width, 9em);
