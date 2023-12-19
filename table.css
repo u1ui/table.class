@@ -20,6 +20,9 @@ https://jsfiddle.net/x90cz65o/103/
     --u1-Gap: 1rem;
     --u1-Col-gap: var(--u1-Gap);
     --u1-Row-gap: var(--u1-Gap);
+
+    container-name: u1-items;
+    container-type: inline-size;
 }
 .u1-table > * {
     display:table-row-group;
@@ -30,6 +33,9 @@ https://jsfiddle.net/x90cz65o/103/
 .u1-table > * > * > * {
     display:table-cell;
     padding: calc(var(--u1-Row-gap) / 2)  calc(var(--u1-Col-gap) / 2);
+
+    container-name: u1-item;
+    container-type: inline-size;
 }
 
 
