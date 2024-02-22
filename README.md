@@ -11,7 +11,7 @@ Better tables
     - Sticky: to make make header-cells sticky
     - Fields: to make inputs width 100%
 
-## Ussage
+## Usage
 
 ```html
 <table class="u1-table -Flex -NoSideGaps -Sticky -Fields">
